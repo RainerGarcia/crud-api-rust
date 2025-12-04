@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    /* Clave: Centra el contenido y establece un ancho máximo */
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #007bff;
+    text-align: center;
+}
+
+/* --- Estilos del Formulario --- */
+.crud-form {
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.crud-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.crud-form input[type="text"],
+.crud-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* Evita que el padding y border se sumen al width del 100% */
+    box-sizing: border-box; 
+}
+
+.crud-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.crud-form button:hover {
+    background-color: #218838;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 30px 0;
+}
+
+/* --- Estilos de la Tabla --- */
+.crud-table-container {
+    /* Permite el scroll horizontal si la tabla es más ancha que su contenedor */
+    overflow-x: auto; 
+}
+
+.crud-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.crud-table th, .crud-table td {
+    border: 1px solid #ddd;
+    /* Aumento ligero del padding para "más espacio" */
+    padding: 14px; 
+    text-align: left;
+    /* Asegura que el texto largo se ajuste en la columna y no desborde la tabla */
+    word-wrap: break-word; 
+}
+
+.crud-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.crud-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Ancho específico para la descripción, ajustando los espacios */
+.crud-table td:nth-child(3) {
+    width: 40%; /* Dedica un 40% del espacio de la tabla a la descripción */
+}
+
+
+.action-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 14px;
+    white-space: nowrap; /* Evita que los botones de acción se rompan en dos líneas */
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.items th{
+    padding-right: 60px;
+}
+
+#table-body td{
+    padding-right: 20px;
+}
