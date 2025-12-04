@@ -22,6 +22,13 @@
             <label for="item-description">Descripción:</label>
             <textarea id="item-description" name="item-description" required></textarea>
             
+            <label for="item-prioridad">Prioridad:</label>
+            <select id="item-prioridad" name="item-prioridad" required>
+                <option value="3" selected>Bajo</option>
+                <option value="2">Medio</option>
+                <option value="1">Urgente</option>
+            </select>
+
             <button type="submit" id="submit-button">Guardar Elemento</button>
         </form>
 
@@ -35,6 +42,7 @@
                         <th>Tarea</th>
                         <th>Nombre</th>
                         <th>Descripción</th>
+                        <th>Prioridad</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
